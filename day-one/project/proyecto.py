@@ -1,4 +1,2 @@
-pelicula = input("Escribe tu PELICULA favorita: ")
-color = input("Escribe tu COLOR favorita: ")
-print("El nombre de tu cerveza se llama\n" +
-      "\"" + pelicula + " " + color + "\"")
+print("El nombre de tu cerveza se llama\n\"" + input("Escribe tu PELICULA favorita: ") +
+      " " + input("Escribe tu COLOR favorita: ") + "\"\nFelicidades!")
