@@ -1,15 +1,11 @@
-from ast import match_case
-from random import random
-
-
 from random import randint
-n_random = randint(1, 20)
-intentos = 8
+n_random = randint(1, 100)
+intentos = 0
 name = input('Ingresa tu nombre: ')
 print(f'Hola {name}, he pensado un numero entre el 1 y el 100 y tienes solo {intentos} para adivinarlo. \n\
 Cual crees que es el numero?')
 numero = 0
-while intentos>0:
+while intentos<8:
     numero = int(input('Ingresa un numero: '))
     if numero < 1 or numero > 100:
         print('El numero no esta permitido dado que es mayor a 100 o menor que 1')
@@ -21,6 +17,6 @@ while intentos>0:
         break
     intentos -=1
 if numero == n_random:
-    print(f'Has ganado, te ha tomado {8-intentos} intentos')
+    print(f'Has ganado, te ha tomado {intentos} intentos')
 else:
     print('PERDISTE')
